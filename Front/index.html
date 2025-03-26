@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fichier upload</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDBtN29heWJwcGFoajdzeTNpdWNpNjhleHBudmVwbDFjcnJkdzY0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I8XVcLFk3W5uRQKsh9/giphy.gif" alt="GIF animé" />
+
+    <form enctype="multipart/form-data" action="../Back/validation.php" method="post">
+
+      <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+
+      Envoyez ce fichier : <input name="userfile" type="file" />
+      <input type="submit" value="Envoyer le fichier" />
+
+    </form>
+
+  </body>
+</html>
